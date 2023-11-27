@@ -8,6 +8,7 @@ public class App {
         
 
         ritaLinje(1);
+        ritaRektangel(0,0);
         }
         
     
@@ -30,6 +31,23 @@ public class App {
                 
         }
     }
+    static void ritaRektangel(int höjd,int bredd)
+    {
+        Scanner tangentbord = new Scanner(System.in);
+        System.out.println("hur bredd?");
+        bredd = tangentbord.nextInt();
+        System.out.println("Hur hög?");
+        höjd = tangentbord.nextInt();
+        for (int i = 0; i<höjd; i++)
+        {
+            System.out.println("");
+
+            for (int j = 0; j<bredd; j++)
+            {
+                System.out.print("*");
+            }
+    }
 
 
+    }
 }
