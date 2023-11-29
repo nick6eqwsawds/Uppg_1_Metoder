@@ -9,6 +9,7 @@ public class App {
 
         ritaLinje(1);
         ritaRektangel(0,0);
+        tal_positivt(3.232);
         }
         
     
@@ -46,8 +47,24 @@ public class App {
             {
                 System.out.print("*");
             }
+        }
     }
+    
+    static boolean tal_positivt(double tal)
 
+    {
+        if(tal>0)
+        {
+            System.out.println("+");
+            return true;
 
+        } else if(tal<0){
+            System.out.println("-");
+            return false;
+            
+        }
+        return false;
+
+        
     }
 }
