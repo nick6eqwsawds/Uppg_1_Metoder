@@ -10,6 +10,7 @@ public class App {
         ritaLinje(1);
         ritaRektangel(0,0);
         tal_positivt(3.232);
+        siffra((char) 6);
         }
         
     
@@ -65,6 +66,24 @@ public class App {
         }
         return false;
 
+        
+    }
+
+    static boolean siffra(char tecken)
+    {
+        char t = '4';
+        boolean svar = Character.isDigit(t);
+        if(svar==true)
+        {
+            System.out.println(t+"är en siffra");
+            return true;
+        }
+        else if(svar!=true)
+        {
+            System.out.println(t+"är en bokstav");
+            return false;
+        }
+        return false;
         
     }
 }
